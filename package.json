@@ -1,0 +1,13 @@
+{
+  "name": "test_package",
+  "version": "1.0.0",
+  "description": "Test protractor project",
+  "scripts": {
+    "wd-update": "node ./node_modules/protractor/bin/webdriver-manager update",
+    "wd-start": "node ./node_modules/protractor/bin/webdriver-manager start",
+    "test": "node ./node_modules/protractor/bin/protractor ./config.js"
+  },
+  "dependencies": {
+    "protractor": "4.0.14"
+  }
+}
