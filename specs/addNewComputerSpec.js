@@ -15,7 +15,7 @@ let MainPage = require("./../pages/MainPage.js"),
         expectedNameDivErrorClass: "error"
     };
 
-xdescribe('When on an "Add a new computer page", a user', function () {
+describe('When on an "Add a new computer page", a user', function () {
 
     beforeEach(function () {
         browser.get("/");
