@@ -12,7 +12,7 @@ let MainPage = require("./../pages/MainPage.js"),
         expectedMainPageTitle: "Play sample application — Computer database"
     };
 
-describe('When adding a new computer, a user', function () {
+describe('When adding a new computer, a user k', function () {
 
     beforeEach(function () {
         browser.get("/");
