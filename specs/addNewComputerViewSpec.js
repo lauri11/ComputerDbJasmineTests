@@ -9,7 +9,7 @@ let MainPage = require("./../pages/MainPage.js"),
         expectedCompanyLabelText: "Company"
     };
 
-describe('New Computer page', function () {
+xdescribe('New Computer page', function () {
 
     beforeEach(function () {
         browser.get("/computers/new");

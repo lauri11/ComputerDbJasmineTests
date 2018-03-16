@@ -10,7 +10,7 @@ let MainPage = require("./../pages/MainPage.js"),
         computerFive: "-1"
     };
 
-describe('When adding a new computer, a user', function () {
+describe('When adding a new computer, a user t', function () {
 
     beforeEach(function () {
         browser.get("/");
