@@ -1,13 +1,15 @@
 exports.config = {
     directConnect: true,
 
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    seleniumAddress: 'http://selenium-hub:4444/wd/hub',
 
-    capabilities: {
+    multiCapabilities: [{
+        'browserName': 'firefox'
+    }, {
         'browserName': 'chrome'
-    },
+    }],
 
-    framework: 'jasmine',
+    framework: 'jasmine2',
 
     specs: ['./../specs/*.js'],
 
@@ -20,5 +22,12 @@ exports.config = {
     onPrepare: function () {
         browser.manage().window().maximize();
         browser.ignoreSynchronization = true;
+
+        let jasmineReporters = require('jasmine-reporters');
+        jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+            consolidateAll: true,
+            savePath: 'test_results',
+            filePrefix: 'xmloutput'
+        }));
     }
 };

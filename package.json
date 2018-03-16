@@ -5,9 +5,12 @@
   "scripts": {
     "wd-update": "node ./node_modules/protractor/bin/webdriver-manager update",
     "wd-start": "node ./node_modules/protractor/bin/webdriver-manager start",
-    "test": "node ./node_modules/protractor/bin/protractor ./config.js"
+    "test": "node ./node_modules/protractor/bin/protractor ./config/protractor.conf.js"
   },
   "dependencies": {
-    "protractor": "4.0.14"
+    "protractor": "latest"
+  },
+  "devDependencies": {
+    "jasmine-reporters": "^2.0.0"
   }
 }
